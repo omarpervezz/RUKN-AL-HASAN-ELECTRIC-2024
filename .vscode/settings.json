@@ -1,0 +1,32 @@
+// {
+//   "editor.autoClosingBrackets": "never",
+//   "editor.suggestOnTriggerCharacters": true,
+//   "editor.hover.enabled": true,
+//   "editor.parameterHints.enabled": true,
+//   "editor.suggest.snippetsPreventQuickSuggestions": true,
+//   "html.suggest.html5": false,
+//   "editor.formatOnSave": true,
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": "explicit",
+//     "source.fixAll.tslint": "explicit",
+//     "source.organizeImports": "explicit"
+//   },
+//   "emmet.includeLanguages": {
+//     "javascript": "javascriptreact"
+//   },
+//   "javascript.validate.enable": false,
+//   "typescript.validate.enable": false,
+//   "workbench.colorTheme": "One Dark Pro Darker",
+//   "editor.fontSize": 16.5,
+//   "workbench.iconTheme": "material-icon-theme",
+//   "files.autoSave": "onFocusChange",
+//   "editor.wordWrap": "on",
+//   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+//   "git.ignoredRepositories": [
+//     "c:\\Users\\progr\\.vscode\\extensions\\stepsize.stepsize-1.0.1\\resources\\demo-repository"
+//   ],
+//   "editor.fontFamily": "Fira Code bold",
+//   "editor.fontWeight": "400",
+//   "liveServer.settings.port": 5501
+// }

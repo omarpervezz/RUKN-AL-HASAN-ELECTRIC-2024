@@ -1,0 +1,150 @@
+/* Importing Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('./font.css');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	max-width: 100%;
+	font-size: 62.2%;
+	overflow: hidden scroll;
+}
+
+a {
+	text-decoration: none;
+}
+img{
+	user-select: none;
+}
+button {
+	border: none;
+	outline: none;
+}
+
+body {
+	text-rendering: optimizelegibility;
+	overflow: hidden;
+	font-size: 16px;
+	line-height: 1.5;
+	position: static;
+}
+
+/*
+CSS indexing for different sections:
+
+1. Header CSS & Mobile Menu CSS
+2. Banner CSS
+3. About US CSS 
+4. Testimonial CSS
+5. Social CSS 
+6. Service CSS
+7. Contact CSS
+8. Footer CSS 
+
+*/
+
+/* Common Styles - Applies to Multiple Elements */
+.container {
+    width: calc(100% - 100px);
+    margin: auto;
+}
+.d-flex{
+	display: flex;
+}
+.flex-row{
+	flex-direction: row;
+}
+.flex-column{
+	flex-direction: column;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.justify-content-center{
+	justify-content: center;;
+}
+.align-items-center{
+	align-items: center;
+}
+.border{
+	border: 1px solid black;
+}
+.ft-common{
+	font-size: 3rem;
+	font-weight: normal;
+	font-style: normal;
+	color: #FFFFFF;
+}
+.btn{
+width: 274px;
+height: 74px;
+border-color: #ffffff;
+border-width: 3px;
+border-style: solid;
+border-radius: 16px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+}
+/* Common Styles - Applies to Multiple Elements */
+
+
+/* Header CSS */
+.header{
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 3.3rem;
+	
+}
+.header-content{
+	padding: 0 3.8rem 0 .5rem;
+}
+.header .left-logo,
+.header .right-logo{
+	width: 76px;
+	height: 83px;
+	
+}
+.header .left-logo{
+	transform: translateX(19px) translateY(-3px);
+}
+.header nav ul li {
+	margin-left: 3.5rem;
+}
+.header nav ul li:first-child{
+	margin-left: 0;
+}
+.header nav ul li a:link,
+.header nav ul li a:visited{
+	text-transform: capitalize;
+
+}
+.header .phone-number img{
+	margin-right: 1rem;
+	width: 35px;
+	height: 35px;
+}
+/* Header CSS */
+
+/* Banner CSS */
+.banner{
+	width: 100vw;
+	height: 100vh;
+	background: url(../../img/banner-bg.png);
+}
+.banner .banner-content{
+	transform:translateX(63px) translateY(-48px);
+}
+.banner .banner-content .title{
+	font-size: 7.2rem;
+	color: #FFFFFF;
+	line-height: 10rem;
+}
+.banner .banner-content .contact-btn{
+	transform: translateY(81px);
+}
+/* Banner CSS */
