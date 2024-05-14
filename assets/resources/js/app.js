@@ -17,23 +17,43 @@ window.addEventListener("scroll", (event) => {
 });
 
 $(document).ready(function(){
-  var slider = $('.bxslider').bxSlider({
-    minSlides: 4,
-    maxSlides: 4,
-    slideWidth: 371,
-    moveSlides: 1,
-    pager: false,
-    infiniteLoop: true,
-    controls: false,
-    slideMargin: 40,
-    onSlideAfter: function($slideElement, oldIndex, newIndex) {
-        // Remove the active class from all slides
-        $('.bxslider li').removeClass('active-slide');
-        // Add the active class to the current slide
-        $slideElement.addClass('active-slide');
+  function getSliderSettings() {
+    const windowWidth = $(window).width();
+    let settings = {
+      slideWidth: 371, // Default slide width for larger screens
+      minSlides: 4,
+      maxSlides: 4,
+      moveSlides: 1,
+      pager: false,
+      infiniteLoop: true,
+      controls: false,
+      slideMargin: 40,
+      onSlideAfter: function($slideElement, oldIndex, newIndex) {
+          $('.bxslider li').removeClass('active-slide');
+          $slideElement.addClass('active-slide');
+      }
+    };
+
+    if(windowWidth < 600) { // Adjustments for smaller screens
+      settings.slideWidth = windowWidth - (settings.slideMargin * 2); // Adjust slide width based on screen size
+      settings.minSlides = 1;
+      settings.maxSlides = 1;
+    } else if(windowWidth < 1000) { // Adjustments for medium screens
+      settings.minSlides = 2;
+      settings.maxSlides = 2;
+      settings.slideWidth = (windowWidth / 2) - (settings.slideMargin * 2); // Adjust slide width based on screen size
     }
-  });
+
+    return settings;
+  }
   
+  let slider = $('.bxslider').bxSlider(getSliderSettings());
+  
+  // Update slider settings on window resize
+  $(window).resize(function() {
+    slider.reloadSlider(getSliderSettings());
+  });
+
   // Custom prev/next button actions
   $('#slider-prev').on('click', function(){
     slider.goToPrevSlide();
