@@ -4,7 +4,7 @@ window.addEventListener("scroll", (event) => {
   const scroll = window.scrollY;
 
   // Select the header element using its "header" tag name
-  const header = document.querySelector("header");
+  const header = document.querySelector(".header");
 
   // Check if the scroll position is greater than 20 pixels
   if (scroll > 20) {
@@ -16,3 +16,35 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
+$(document).ready(function(){
+  var slider = $('.bxslider').bxSlider({
+    minSlides: 4,
+    maxSlides: 4,
+    slideWidth: 371,
+    moveSlides: 1,
+    pager: false,
+    infiniteLoop: true,
+    controls: false,
+    slideMargin: 40,
+    onSlideAfter: function($slideElement, oldIndex, newIndex) {
+        // Remove the active class from all slides
+        $('.bxslider li').removeClass('active-slide');
+        // Add the active class to the current slide
+        $slideElement.addClass('active-slide');
+    }
+  });
+  
+  // Custom prev/next button actions
+  $('#slider-prev').on('click', function(){
+    slider.goToPrevSlide();
+    return false;
+  });
+
+  $('#slider-next').on('click', function(){
+    slider.goToNextSlide();
+    return false;
+  });
+  
+  // Manually trigger the onSlideAfter callback for the initial load
+  $('.bxslider li').eq(slider.getCurrentSlide()).addClass('active-slide');
+});

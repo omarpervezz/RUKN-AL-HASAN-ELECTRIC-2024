@@ -20,6 +20,8 @@
       <link rel="stylesheet" href="./assets/resources/css/reset.css" type="text/css">
       <!-- Animate.css for animation effects -->
       <link rel="stylesheet" href="./assets/vendors/css/animate.min.css" type="text/css">
+      <!--bxSlider CSS CDN-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
       <!-- Pushbar.css for mobile menu styling -->
       <link rel="stylesheet" href="./assets/vendors/css/pushbar.css" type="text/css">
       <!-- Custom CSS styling -->
@@ -28,73 +30,70 @@
       <link rel="stylesheet" href="./assets/resources/css/responsive.css" type="text/css">
    </head>
    <body>
-
-     
       <!--Header Start-->
       <header class="header">
          <div class="container">
-           <div class="header-content d-flex flex-row justify-content-between align-items-center">
-            <div class="logo">
-               <a href="#">
+            <div class="header-content d-flex flex-row justify-content-between align-items-center">
+               <div class="logo">
+                  <a href="#">
                   <img src="./assets/img/left-logo.svg" alt="logo" class="left-logo">
                   <img src="./assets/img/right-logo.svg" alt="logo" class="right-logo">
-               </a>
+                  </a>
+               </div>
+               <nav>
+                  <ul class="d-flex flex-row">
+                     <li>
+                        <a href="#" class="bebas-neue-regular ft-common">Home</a>
+                     </li>
+                     <li>
+                        <a href="#" class="bebas-neue-regular ft-common">Products</a>
+                     </li>
+                     <li>
+                        <a href="#" class="bebas-neue-regular ft-common">About</a>
+                     </li>
+                     <li>
+                        <a href="#" class="bebas-neue-regular ft-common">Contact</a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="phone-number">
+                  <a href="#" class="d-flex flex-row align-items-center">
+                  <img src="./assets/img/icon/phone-icon.png" alt="phone" class="phone">
+                  <span class="bebas-neue-regular ft-common">06-54404227</span>
+                  </a>
+               </div>
             </div>
-            <nav>
-               <ul class="d-flex flex-row">
-                  <li>
-                     <a href="#" class="bebas-neue-regular ft-common">Home</a>
-                  </li>
-                  <li>
-                     <a href="#" class="bebas-neue-regular ft-common">Products</a>
-                  </li>
-                  <li>
-                     <a href="#" class="bebas-neue-regular ft-common">About</a>
-                  </li>
-                  <li>
-                     <a href="#" class="bebas-neue-regular ft-common">Contact</a>
-                  </li>
-               </ul>
-            </nav>
-            <div class="phone-number">
-              <a href="#" class="d-flex flex-row align-items-center">
-               <img src="./assets/img/icon/phone-icon.png" alt="phone" class="phone">
-               <span class="bebas-neue-regular ft-common">06-54404227</span>
-              </a>
-            </div>
-           </div>
          </div>
       </header>
       <!--Header End -->
       <!--Mobile Menu Start-->
       <div
-      data-pushbar-id="mypushbar1"
-      data-pushbar-direction="right"
-      class="mobile-menu-wrapper"
-    >
-     <div class="mobile-menu">
-      <button type="button" class="close"
-      data-pushbar-close><i class="fa-solid fa-close"></i></button>
-      <ul>
-         <li>
-            <a href="#">Home</a>
-         </li>
-         <li>
-            <a href="#">About Us</a>
-         </li>
-         <li>
-            <a href="#">Social</a>
-         </li>
-         <li>
-            <a href="#">Services</a>
-         </li>
-         <li>
-            <a href="#">Contact Us</a>
-         </li>
-         
-      </ul>
-     </div>
-    </div>
+         data-pushbar-id="mypushbar1"
+         data-pushbar-direction="right"
+         class="mobile-menu-wrapper"
+         >
+         <div class="mobile-menu">
+            <button type="button" class="close"
+               data-pushbar-close><i class="fa-solid fa-close"></i></button>
+            <ul>
+               <li>
+                  <a href="#">Home</a>
+               </li>
+               <li>
+                  <a href="#">About Us</a>
+               </li>
+               <li>
+                  <a href="#">Social</a>
+               </li>
+               <li>
+                  <a href="#">Services</a>
+               </li>
+               <li>
+                  <a href="#">Contact Us</a>
+               </li>
+            </ul>
+         </div>
+      </div>
       <!--Mobile Menu End-->
       <!-- Banner Start-->
       <section class="banner d-flex">
@@ -107,11 +106,152 @@
          </div>
       </section>
       <!--Banner End-->
-
-
-
+      <!--Main Start-->
+      <main class="bg-image">
+         <div class="wrapper bg-image">
+            <!--About Start-->
+            <section class="about">
+               <div class="container">
+                  <div class="about-content d-flex flex-row">
+                     <div class="about-img">
+                        <img src="./assets/img/about-logo.svg" alt="about-img-logo">
+                        <img src="./assets/img/about-img.png" alt="about-img" class="">
+                     </div>
+                     <div class="about-info">
+                        <header>
+                           <h2 class="sub-title bebas-neue-regular">
+                              About Us
+                           </h2>
+                        </header>
+                        <h3 class="greet-text poppins-regular">Welcome To <br> Rukn Al Hasan
+                        </h3>
+                        <p class="short-description poppins-regular">
+                           RUKN AL HASAN is a limited liability company incorporated in the United Arab Emirates . include trading on all electrical materials, sanitary materials, Hardware, Tools & Air-Conditioning. Rukn Al Hasan has the unique ability to provide customers with complete solutions from one source -and this differentiates it from other suppliers.
+                        </p>
+                        <a href="#" class="btn learn-more bebas-neue-regular">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <!--About End-->
+            <!--Our Products Start-->
+            <section class="our-products">
+               <div class="proudct-wrapper">
+                  <header>
+                     <h2 class="sub-title bebas-neue-regular text-center">OUR PRODUCTS</h2>
+                  </header>
+                  <div class="slider-container d-flex justify-content-end">
+                     <div class="all-prod d-flex flex-column">
+                        <div class="slider-controls d-flex flex-column">
+                           <button id="slider-prev">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="21.072" height="40.567" viewBox="166.428 2334.5 21.072 40.567">
+                                 <path d="m189 2376.567-21.072-21.071L189 2336" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#fff" fill="transparent" data-name="Path 2"/>
+                              </svg>
+                           </button>
+                           <button id="slider-next">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="21.072" height="42.143" viewBox="166.428 2399.098 21.072 42.143">
+                                 <path d="M167.928 2442.741 189 2421.669l-21.072-21.071" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#fff" fill="transparent" data-name="Path 3"/>
+                              </svg>
+                           </button>
+                        </div>
+                        <div>
+                           <span class="all-proudcts-txt bebas-neue-regular">ALL PRODUCTS
+                           </span>
+                        </div>
+                     </div>
+                     <ul class="bxslider">
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Armoured Cable 
+                                 LSZH
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>PVC Flexible 
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Unarmoured
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Rubber Flexible 
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Armoured Cable 
+                                 LSZH
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>PVC Flexible 
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Unarmoured
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                        <li>
+                           <div class="image-container">
+                              <img src="./assets/img/wire.png" alt="wire-1" />
+                           </div>
+                           <footer class="image-info">
+                              <p>Rubber Flexible 
+                                 Cables
+                              </p>
+                           </footer>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </section>
+            <!--Our Products End-->
+         </div>
+      </main>
+      <!--Main End-->
       <!-- jQuery from Google CDN -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <!-- bxSlider CDN-->
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
       <!--Scroll out js-->
       <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
       <!-- HTML5shiv for HTML5 elements in older browsers -->
@@ -124,8 +264,6 @@
       <script src="assets/vendors/js/selectivizr-min.js"></script>
       <!-- Pushbar.js for mobile menu functionality -->
       <script src="./assets/vendors/js/pushbar.js"></script>
-      <!-- Including Owl Carousel JavaScript -->
-      <script src="assets/vendors/js/owl.carousel.js"></script>
       <!-- Custom JavaScript functionality -->
       <script src="./assets/resources/js/app.js"></script>
    </body>

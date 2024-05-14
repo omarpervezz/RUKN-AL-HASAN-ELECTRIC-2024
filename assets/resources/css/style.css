@@ -1,11 +1,13 @@
 /* Importing Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('./font.css');
-*{
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
+
 html {
 	max-width: 100%;
 	font-size: 62.2%;
@@ -15,12 +17,15 @@ html {
 a {
 	text-decoration: none;
 }
-img{
+
+img {
 	user-select: none;
 }
+
 button {
 	border: none;
 	outline: none;
+	background-color: initial;
 }
 
 body {
@@ -47,104 +52,360 @@ CSS indexing for different sections:
 
 /* Common Styles - Applies to Multiple Elements */
 .container {
-    width: calc(100% - 100px);
-    margin: auto;
+	width: calc(100% - 100px);
+	margin: auto;
 }
-.d-flex{
+
+.d-flex {
 	display: flex;
 }
-.flex-row{
+
+.flex-row {
 	flex-direction: row;
 }
-.flex-column{
+
+.flex-column {
 	flex-direction: column;
 }
-.justify-content-between{
+
+.justify-content-between {
 	justify-content: space-between;
 }
-.justify-content-center{
-	justify-content: center;;
+
+.justify-content-center {
+	justify-content: center;
+	;
 }
-.align-items-center{
+
+.justify-content-end {
+	justify-content: end;
+	;
+}
+
+.align-items-center {
 	align-items: center;
 }
-.border{
+
+.text-center {
+	text-align: center;
+}
+
+.border {
 	border: 1px solid black;
 }
-.ft-common{
+
+.ft-common {
 	font-size: 3rem;
 	font-weight: normal;
 	font-style: normal;
 	color: #FFFFFF;
 }
-.btn{
-width: 274px;
-height: 74px;
-border-color: #ffffff;
-border-width: 3px;
-border-style: solid;
-border-radius: 16px;
-display: inline-flex;
-justify-content: center;
-align-items: center;
+
+section {
+	padding: 6rem 0;
 }
+
+.btn {
+	width: 274px;
+	height: 74px;
+	border-color: #ffffff;
+	border-width: 3px;
+	border-style: solid;
+	border-radius: 16px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-title {
+	opacity: 0.3;
+	font-size: 6rem;
+	color: #FFFFFF;
+	letter-spacing: .2rem;
+}
+
+.greet-text {
+	font-size: 5.4rem;
+	color: #FFFFFF;
+	line-height: 5.1rem;
+}
+
+.short-description {
+	opacity: 0.92;
+	font-size: 1.8rem;
+	color: #F5F5F5;
+	width: 56%;
+}
+
+.border {
+	border: 1px solid rgb(228, 222, 222);
+}
+
 /* Common Styles - Applies to Multiple Elements */
 
 
 /* Header CSS */
-.header{
+.header {
 	width: 100vw;
 	position: fixed;
 	top: 0;
 	left: 0;
 	padding-top: 3.3rem;
-	
+	z-index: 10;
+
 }
-.header-content{
+
+header.backDrop {
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	padding: 3rem 0;
+	opacity: 0.88;
+	background: #181815
+}
+
+.header-content {
 	padding: 0 3.8rem 0 .5rem;
 }
+
 .header .left-logo,
-.header .right-logo{
+.header .right-logo {
 	width: 76px;
 	height: 83px;
-	
+
 }
-.header .left-logo{
+
+.header .left-logo {
 	transform: translateX(19px) translateY(-3px);
 }
+
 .header nav ul li {
 	margin-left: 3.5rem;
 }
-.header nav ul li:first-child{
+
+.header nav ul li:first-child {
 	margin-left: 0;
 }
+
 .header nav ul li a:link,
-.header nav ul li a:visited{
+.header nav ul li a:visited {
 	text-transform: capitalize;
 
 }
-.header .phone-number img{
+
+.header .phone-number img {
 	margin-right: 1rem;
 	width: 35px;
 	height: 35px;
 }
+
 /* Header CSS */
 
 /* Banner CSS */
-.banner{
+.banner {
 	width: 100vw;
 	height: 100vh;
 	background: url(../../img/banner-bg.png);
 }
-.banner .banner-content{
-	transform:translateX(63px) translateY(-48px);
+
+.banner .banner-content {
+	transform: translateX(63px) translateY(-48px);
 }
-.banner .banner-content .title{
+
+.banner .banner-content .title {
 	font-size: 7.2rem;
 	color: #FFFFFF;
 	line-height: 10rem;
 }
-.banner .banner-content .contact-btn{
+
+.banner .banner-content .contact-btn {
 	transform: translateY(81px);
 }
+
 /* Banner CSS */
+/* Main CSS */
+.bg-image {
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left top;
+}
+
+main.bg-image {
+	background-image: url(../../img/main-bg.png);
+}
+
+.wrapper.bg-image {
+	background-image: url(../../img/overlay.png);
+}
+
+/* Main CSS */
+/* About CSS */
+.about .about-content {
+	padding: 6.5rem 0 6rem 0;
+}
+
+.about .about-content>div {
+	flex-basis: 50%;
+}
+
+.about .about-content> :nth-child(1) {
+	text-align: center;
+	position: relative;
+}
+
+.about .about-content> :nth-child(2) {
+	padding-left: 1.5rem;
+}
+
+.about .about-content> :nth-child(1) img[alt="about-img-logo"] {
+	position: absolute;
+	top: -4.3rem;
+	left: 8.7rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.about .about-content> :nth-child(1) img[alt="about-img"] {
+	border-top-right-radius: .3rem;
+	margin-top: 4rem;
+}
+
+.about .greet-text {
+	margin-top: 7rem;
+}
+
+.about .short-description {
+	margin-top: 3.9rem;
+	margin-bottom: 4.8rem;
+}
+
+.about .learn-more {
+	color: #F5F5F5;
+	width: 17rem;
+	height: 4.6rem;
+	opacity: 0.80;
+	border-color: #ffffff;
+	border-width: .2rem;
+	margin-top: 5rem;
+}
+
+/* About CSS */
+
+/* Products CSS */
+.our-products {
+	background-image: url(../../img/proudct-overlay.png);
+	background-repeat: no-repeat;
+	padding: 2.6rem 0;
+}
+
+.our-products .sub-title {
+	margin-bottom: 2rem;
+}
+
+.slider-controls {
+	transform: translate(33px, 7px);
+}
+
+.all-prod button {
+	cursor: pointer;
+}
+
+.all-prod #slider-next {
+	transform: translateY(10px);
+}
+
+.all-prod button svg {
+	opacity: 0.59;
+}
+
+.all-prod .all-proudcts-txt {
+	display: inline-block;
+	width: 242px;
+	height: 29px;
+	transform: rotate(90deg) translate(302px, -28px);
+	opacity: 0.26;
+	font-size: 2.5rem;
+	color: #f1e1e1;
+	letter-spacing: .4rem;
+}
+
+.slider-container {
+	padding-right: 1.4rem;
+}
+
+.bxslider li {
+	height: 434px;
+	border-color: #707070;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 30px;
+	background: #ffffff;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	transition: border-color 0.2 ease-out;
+
+}
+
+.bx-wrapper {
+	background-color: initial;
+	box-shadow: initial;
+	border: 0;
+}
+
+.bxslider img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.bxslider .image-container {
+	display: flex;
+	justify-content: end;
+	height: 69%;
+	align-items: end;
+}
+
+.bxslider footer.image-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 31%;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	background: #000000;
+	transition: background-color 0.2s ease-out;
+}
+
+.bxslider footer.image-info p {
+	filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.16));
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	font-style: normal;
+	color: #ffffff;
+	width: 70%;
+	text-align: center;
+	line-height: 3.9rem;
+}
+
+.bxslider li:hover {
+	border-color: #f5b11a;
+}
+
+.bxslider li:not(.active-slide):hover footer.image-info p {
+	color: #F5B11A;
+}
+
+.active-slide footer.image-info {
+	background: #f5b11a;
+}
+
+.active-slide footer.image-info p {
+	color: #000000;
+}
+
+/* Products CSS */
