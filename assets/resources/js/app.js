@@ -38,7 +38,7 @@ $(document).ready(function(){
       settings.slideWidth = windowWidth - (settings.slideMargin * 2); // Adjust slide width based on screen size
       settings.minSlides = 1;
       settings.maxSlides = 1;
-    } else if(windowWidth < 1000) { // Adjustments for medium screens
+    } else if(windowWidth < 1100) { // Adjustments for medium screens
       settings.minSlides = 2;
       settings.maxSlides = 2;
       settings.slideWidth = (windowWidth / 2) - (settings.slideMargin * 2); // Adjust slide width based on screen size
