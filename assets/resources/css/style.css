@@ -122,6 +122,9 @@ section {
 	font-size: 6rem;
 	color: #FFFFFF;
 	letter-spacing: .2rem;
+	font-family: "Bebas Neue", sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 .greet-text {
@@ -409,3 +412,28 @@ main.bg-image {
 }
 
 /* Products CSS */
+
+
+
+
+
+
+
+
+/* Enquiry CSS */
+
+/* Enquiry CSS */
+
+
+
+
+/* Brand CSS */
+.brand{
+	padding: 3rem 0;
+	background-image: url(../../img/brand-bg-overlay.png);
+}
+.brand img{
+	max-width: 100%;
+	height: auto;
+}
+/* Brand CSS */

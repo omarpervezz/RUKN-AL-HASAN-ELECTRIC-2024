@@ -20,7 +20,7 @@ $(document).ready(function(){
   function getSliderSettings() {
     const windowWidth = $(window).width();
     let settings = {
-      slideWidth: 371, // Default slide width for larger screens
+      slideWidth: 371,
       minSlides: 4,
       maxSlides: 4,
       moveSlides: 1,
@@ -34,14 +34,14 @@ $(document).ready(function(){
       }
     };
 
-    if(windowWidth < 600) { // Adjustments for smaller screens
-      settings.slideWidth = windowWidth - (settings.slideMargin * 2); // Adjust slide width based on screen size
+    if(windowWidth < 600) {
+      settings.slideWidth = windowWidth - (settings.slideMargin * 2);
       settings.minSlides = 1;
       settings.maxSlides = 1;
-    } else if(windowWidth < 1100) { // Adjustments for medium screens
+    } else if(windowWidth < 1100) { 
       settings.minSlides = 2;
       settings.maxSlides = 2;
-      settings.slideWidth = (windowWidth / 2) - (settings.slideMargin * 2); // Adjust slide width based on screen size
+      settings.slideWidth = (windowWidth / 2) - (settings.slideMargin * 2);
     }
 
     return settings;
@@ -68,3 +68,17 @@ $(document).ready(function(){
   // Manually trigger the onSlideAfter callback for the initial load
   $('.bxslider li').eq(slider.getCurrentSlide()).addClass('active-slide');
 });
+
+
+
+function initMap() {
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 23.684976, lng: 53.899873 }, // coordinates for United Arab Emirates
+    zoom: 6,
+  });
+}
+
+// Load the API
+const script = document.createElement("script");
+script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDHDnaSXRXooWRY7xzniEnf364ptm4p_Is&callback=initMap`;
+document.getElementsByTagName("head")[0].appendChild(script);
