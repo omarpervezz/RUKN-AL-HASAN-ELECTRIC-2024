@@ -71,14 +71,14 @@ $(document).ready(function(){
 
 
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 23.684976, lng: 53.899873 }, // coordinates for United Arab Emirates
-    zoom: 6,
-  });
-}
+// function initMap() {
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     center: { lat: 25.365973, lng: 55.365674 }, // coordinates for United Arab Emirates
+//     zoom: 6,
+//   });
+// }
 
-// Load the API
-const script = document.createElement("script");
-script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDHDnaSXRXooWRY7xzniEnf364ptm4p_Is&callback=initMap`;
-document.getElementsByTagName("head")[0].appendChild(script);
+// // Load the API
+// const script = document.createElement("script");
+// script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDHDnaSXRXooWRY7xzniEnf364ptm4p_Is&callback=initMap`;
+// document.getElementsByTagName("head")[0].appendChild(script);
